@@ -23,7 +23,7 @@ public class Calender {
 		
 		// Scroll the Page
 		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("window.scrollBy(0,800)");
+		js.executeScript("window.scrollBy(0,1000)");
 		
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//*[@id='form-field-travel_comp_date']")).click();
