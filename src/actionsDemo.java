@@ -3,6 +3,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 
 public class actionsDemo {
@@ -10,8 +11,13 @@ public class actionsDemo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\ttu\\Documents\\ChromeDriver\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
+		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\ttu\\Documents\\ChromeDriver\\chromedriver.exe");
+		
+		//WebDriver driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		WebDriver driver = new ChromeDriver(options);
+		
+		
 		driver.manage().window().maximize();
 
 		driver.get("https://www.amazon.com/");

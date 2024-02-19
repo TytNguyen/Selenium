@@ -13,7 +13,7 @@ public class SSLCheck {
 		options.setCapability("proxy", proxy);
 		options.setAcceptInsecureCerts(true); 
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\ttu\\Documents\\ChromeDriver\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\ttu\\Documents\\ChromeDriver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver(options);
 		
 		driver.manage().window().maximize();
