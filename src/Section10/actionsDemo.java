@@ -21,7 +21,7 @@ public class actionsDemo {
 		
 		driver.manage().window().maximize();
 
-		driver.get("https://www.amazon.com/");
+		driver.get("https://www.ebay.com/");
 		
 		Actions a = new Actions(driver);
 		
